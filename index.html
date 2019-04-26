@@ -6,20 +6,14 @@
         </title>         //https://rajukp25.github.io/js_tutorial/
         <meta charset="utf-8">
         <script>
-        alert("Hello, World");
-        </script>
-        <script>
+        function dayName(date) {
         const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-        "Thursday", "Friday", "Saturday"];
-        let now = new Date();
-        let dayName = daysOfTheWeek[now.getDay()];
-        alert(`Hello, world! Happy ${dayName}.`);
-        </script>
-        <script>
-        console.log("This page contains a friendly greeting.");
-        let firstname = "michale";
-        let lastname = "harlt";
-        console.log(firstname, lastname);
+                               "Thursday", "Friday", "Saturday"];
+        return daysOfTheWeek[date.getDay()];
+      }
+
+      let now = new Date();
+      alert(`Hello, world! Happy ${dayName(now)}.`);
         
         </script>
     </head>
